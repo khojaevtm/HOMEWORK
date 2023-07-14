@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.parent {
+  display: flex;
+  gap: 20px;
+}
+.child {
+  background-color: dodgerblue;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 900px) {
+  .child {
+    background-color: blueviolet;
+    transition: all 0.3s ease;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .child {
+    background-color: aqua;
+    transition: all 1s ease;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .child {
+    background-color: green;
+    transition: all 0.3s ease;
+  }
+}
